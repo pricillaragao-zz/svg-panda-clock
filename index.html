@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width" , initial-scale=1, viewport-fit="cover">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width"
+      ,
+      initial-scale="1,"
+      viewport-fit="cover"
+    />
     <title>Pricilla's Clock</title>
-</head>
-<meta name="description" content="A beautiful and simple pointer clock using JS and CSS.">
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope');
-</style>
-<link rel="stylesheet" href="index.css" />
+  </head>
+  <meta
+    name="description"
+    content="A beautiful and simple pointer clock using JS and CSS."
+  />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope");
+  </style>
+  <link rel="stylesheet" href="index.css" />
 
-<body>
+  <body>
     <!-- <header>
         <a href=""> 
           <img src="GitHub-Mark-Light-32px.png" alt="GitHub logo" />
@@ -29,96 +37,153 @@
         </div>
     </main> -->
     <div>
-        <svg id="Laag_1" data-name="Laag 1" xmlns="http://www.w3.org/2000/svg" viewBox="385 275 400 200">
-            <defs>
-                <style>
-                    .cls-1,
-                    .cls-3 {
-                        fill: #fff;
-                    }
+      <svg
+        id="Laag_1"
+        data-name="Laag 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="385 275 400 200"
+      >
+        <defs>
+          <style>
+            .cls-1,
+            .cls-3 {
+              fill: #fff;
+            }
 
-                    .cls-1,
-                    .cls-2 {
-                        stroke: #000;
-                    }
+            .cls-1,
+            .cls-2 {
+              stroke: #000;
+            }
 
-                    .cls-1,
-                    .cls-2,
-                    .cls-4 {
-                        stroke-miterlimit: 10;
-                    }
+            .cls-1,
+            .cls-2,
+            .cls-4 {
+              stroke-miterlimit: 10;
+            }
 
-                    .cls-2,
-                    .cls-4 {
-                        fill: none;
-                    }
+            .cls-2,
+            .cls-4 {
+              fill: none;
+            }
 
-                    .cls-4 {
-                        stroke: #fff;
-                    }
-                </style>
-            </defs>
-            <!--orelha esquerda-->
-            <circle cx="525.85" cy="318.22" r="24.1" />
-            <!--orelha direita-->
-            <circle cx="721.02" cy="390.82" r="24.1" transform="translate(132 967.33) rotate(-80.78)" />
+            .cls-4 {
+              stroke: #fff;
+            }
+          </style>
+        </defs>
+        <!--orelha esquerda-->
+        <circle cx="525.85" cy="318.22" r="24.1" />
+        <!--orelha direita-->
+        <circle
+          cx="721.02"
+          cy="390.82"
+          r="24.1"
+          transform="translate(132 967.33) rotate(-80.78)"
+        />
 
-            <!--rosto-->
-            <ellipse class="cls-1" cx="579.18" cy="378.23" rx="81.15" ry="74.43" />
+        <!--rosto-->
+        <ellipse class="cls-1" cx="579.18" cy="378.23" rx="81.15" ry="74.43" />
 
-            <!-- seconds hand -->
-            <line id="sec-hand" x1="579.15" x2="579.15" y1="378" y2="310" stroke="red" stroke-linecap="butt">
-                <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="60s"
-                    repeatCount="indefinite"  />
-            </line>
-            <!-- minutes hand -->
-            <line id="min-hand" x1="579.15" x2="579.15" y1="378" y2="325" stroke="green" stroke-linecap="butt">
-            
-                <!-- <marker id="arrow" markerWidth="10" markerHeight="325" refX="579.15" refY="325" orient="auto">
+        <!-- seconds hand -->
+        <line
+          id="sec-hand"
+          x1="579.15"
+          x2="579.15"
+          y1="378"
+          y2="310"
+          stroke="red"
+          stroke-linecap="butt"
+        >
+          <animateTransform
+            attributeName="transform"
+            attributeType="XML"
+            type="rotate"
+            dur="60s"
+            repeatCount="indefinite"
+          />
+        </line>
+        <!-- minutes hand -->
+        <line
+          id="min-hand"
+          x1="579.15"
+          x2="579.15"
+          y1="378"
+          y2="325"
+          stroke="green"
+          stroke-linecap="butt"
+        >
+          <!-- <marker id="arrow" markerWidth="10" markerHeight="325" refX="579.15" refY="325" orient="auto">
                   <path d="M0,0 L0,6 L9,3 z" fill="#000" />
                 </marker> -->
-                <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="3600s"
-                    repeatCount="indefinite" />
-                   
-            </line>
+          <animateTransform
+            attributeName="transform"
+            attributeType="XML"
+            type="rotate"
+            dur="3600s"
+            repeatCount="indefinite"
+          />
+        </line>
 
-            <!-- minutes hand -->
-            <line id="hour-hand" x1="579.15" x2="579.15" y1="378" y2="330" stroke="blue" stroke-linecap="butt">
-                <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="43200s"
-                    repeatCount="indefinite" />
-                   
-            </line>
+        <!-- hour hand -->
+        <line
+          id="hour-hand"
+          x1="579.15"
+          x2="579.15"
+          y1="378"
+          y2="330"
+          stroke="blue"
+          stroke-linecap="butt"
+        >
+          <animateTransform
+            attributeName="transform"
+            attributeType="XML"
+            type="rotate"
+            dur="43200s"
+            repeatCount="indefinite"
+          />
+        </line>
 
+        <!--bolinha preta olho direito-->
+        <ellipse
+          cx="634.3"
+          cy="435.57"
+          rx="22.05"
+          ry="18.2"
+          transform="translate(-174.17 632.43) rotate(-54.98)"
+        />
+        <!--bolinha preta olho esquerdo-->
+        <ellipse
+          cx="700.96"
+          cy="435.49"
+          rx="18.2"
+          ry="22.05"
+          transform="translate(-199.95 503.47) rotate(-41.66)"
+        />
 
+        <!-- bolinha branca olho esquerdo -->
+        <circle class="cls-3" cx="549.95" cy="358.86" r="4.04" />
+        <!-- bolinha branca olho direito -->
+        <circle class="cls-3" cx="609.17" cy="358.86" r="4.04" />
 
-
-
-
-            <!--bolinha preta olho direito-->
-            <ellipse cx="634.3" cy="435.57" rx="22.05" ry="18.2" transform="translate(-174.17 632.43) rotate(-54.98)" />
-            <!--bolinha preta olho esquerdo-->
-            <ellipse cx="700.96" cy="435.49" rx="18.2" ry="22.05"
-                transform="translate(-199.95 503.47) rotate(-41.66)" />
-
-            <!-- bolinha branca olho esquerdo -->
-            <circle class="cls-3" cx="549.95" cy="358.86" r="4.04" />
-            <!-- bolinha branca olho direito -->
-            <circle class="cls-3" cx="609.17" cy="358.86" r="4.04" />
-
-            <!-- focinho bolinha -->
-            <path
-                d="M678.65,464.09c0,3.46-5.08,8.3-11.73,9.67-6.52-1-11.73-6.21-11.73-9.67s5.25-6.27,11.73-6.27S678.65,460.62,678.65,464.09Z"
-                transform="translate(-87.74 -72.6)" />
-            <!-- focinho lado esquerdo -->
-            <path class="cls-2" d="M666.92,475.41v14s-7.35,11.21-15.22,0" transform="translate(-87.74 -72.6)" />
-            <!-- focinho lado direito -->
-            <path class="cls-2" d="M666.92,475.41v14s7.35,11.21,15.22,0" transform="translate(-87.74 -72.6)" />
-
-
-
-        </svg>
+        <!-- focinho bolinha -->
+        <path
+          d="M678.65,464.09c0,3.46-5.08,8.3-11.73,9.67-6.52-1-11.73-6.21-11.73-9.67s5.25-6.27,11.73-6.27S678.65,460.62,678.65,464.09Z"
+          transform="translate(-87.74 -72.6)"
+        />
+        <!-- focinho lado esquerdo -->
+        <path
+          class="cls-2"
+          d="M666.92,475.41v14s-7.35,11.21-15.22,0"
+          transform="translate(-87.74 -72.6)"
+        />
+        <!-- focinho lado direito -->
+        <path
+          class="cls-2"
+          d="M666.92,475.41v14s7.35,11.21,15.22,0"
+          transform="translate(-87.74 -72.6)"
+        />
+      </svg>
     </div>
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>

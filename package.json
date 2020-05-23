@@ -5,11 +5,13 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "prettier": "^2.0.5",
     "serve": "^11.3.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "serve"
+    "start": "serve",
+    "format": "prettier --write \"./**/*.{js,html,css,md,json}\""
   },
   "repository": {
     "type": "git",
