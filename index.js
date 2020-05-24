@@ -15,7 +15,7 @@ min.setAttribute("to", `${minutesDegrees + 360} 579.15 378`);
 
 // 3 - hours
 const hours = now.getHours();
-const hoursDegrees = (hours * 3600 + minutes * 60 + seconds) * 360 / 43200;
+const hoursDegrees = ((hours * 3600 + minutes * 60 + seconds) * 360) / 43200;
 const hour = document.querySelector("#hour-hand > animateTransform");
 hour.setAttribute("from", `${hoursDegrees} 579.15 378`);
 hour.setAttribute("to", `${hoursDegrees + 360} 579.15 378`);
