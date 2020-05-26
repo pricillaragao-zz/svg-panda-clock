@@ -72,65 +72,6 @@
         <!--rosto-->
         <ellipse class="cls-1" cx="579.18" cy="378.23" rx="81.15" ry="74.43" />
 
-        <!-- seconds hand -->
-        <line
-          id="sec-hand"
-          x1="579.15"
-          x2="579.15"
-          y1="378"
-          y2="310"
-          stroke="red"
-          stroke-linecap="butt"
-        >
-          <animateTransform
-            attributeName="transform"
-            attributeType="XML"
-            type="rotate"
-            dur="60s"
-            repeatCount="indefinite"
-          />
-        </line>
-        <!-- minutes hand -->
-        <line
-          id="min-hand"
-          x1="579.15"
-          x2="579.15"
-          y1="378"
-          y2="325"
-          stroke="green"
-          stroke-linecap="butt"
-        >
-          <!-- <marker id="arrow" markerWidth="10" markerHeight="325" refX="579.15" refY="325" orient="auto">
-                  <path d="M0,0 L0,6 L9,3 z" fill="#000" />
-                </marker> -->
-          <animateTransform
-            attributeName="transform"
-            attributeType="XML"
-            type="rotate"
-            dur="3600s"
-            repeatCount="indefinite"
-          />
-        </line>
-
-        <!-- hour hand -->
-        <line
-          id="hour-hand"
-          x1="579.15"
-          x2="579.15"
-          y1="378"
-          y2="330"
-          stroke="blue"
-          stroke-linecap="butt"
-        >
-          <animateTransform
-            attributeName="transform"
-            attributeType="XML"
-            type="rotate"
-            dur="43200s"
-            repeatCount="indefinite"
-          />
-        </line>
-
         <!--bolinha preta olho direito-->
         <ellipse
           cx="634.3"
@@ -170,6 +111,62 @@
           d="M666.92,475.41v14s7.35,11.21,15.22,0"
           transform="translate(-87.74 -72.6)"
         />
+
+        <!-- seconds hand -->
+        <line
+          id="sec-hand"
+          x1="579.15"
+          x2="579.15"
+          y1="378"
+          y2="310"
+          stroke="red"
+          stroke-linecap="butt"
+        >
+          <animateTransform
+            attributeName="transform"
+            attributeType="XML"
+            type="rotate"
+            dur="60s"
+            repeatCount="indefinite"
+          />
+        </line>
+        <!-- minutes hand -->
+        <line
+          id="min-hand"
+          x1="579.15"
+          x2="579.15"
+          y1="378"
+          y2="325"
+          stroke="green"
+          stroke-linecap="butt"
+        >
+          <animateTransform
+            attributeName="transform"
+            attributeType="XML"
+            type="rotate"
+            dur="3600s"
+            repeatCount="indefinite"
+          />
+        </line>
+
+        <!-- hour hand -->
+        <line
+          id="hour-hand"
+          x1="579.15"
+          x2="579.15"
+          y1="378"
+          y2="330"
+          stroke="blue"
+          stroke-linecap="butt"
+        >
+          <animateTransform
+            attributeName="transform"
+            attributeType="XML"
+            type="rotate"
+            dur="43200s"
+            repeatCount="indefinite"
+          />
+        </line>
       </svg>
     </div>
     <script src="index.js"></script>
