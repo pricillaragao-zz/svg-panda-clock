@@ -19,3 +19,17 @@ const hoursDegrees = ((hours * 3600 + minutes * 60 + seconds) * 360) / 43200;
 const hour = document.querySelector("#hour-hand > animateTransform");
 hour.setAttribute("from", `${hoursDegrees} 579.15 378`);
 hour.setAttribute("to", `${hoursDegrees + 360} 579.15 378`);
+
+for (let i = 1; i <= 12; i++) {
+  const el = document.createElementNS("http://www.w3.org/2000/svg", "line");
+
+  el.setAttribute("x1", "579.15");
+  el.setAttribute("y1", "305");
+  el.setAttribute("x2", "579.15");
+  el.setAttribute("y2", "310");
+  el.setAttribute("transform", "rotate(" + (i * 360) / 12 + " 579.15 378)");
+  el.setAttribute("style", "stroke: #7D807D;");
+
+  const panda = document.getElementById("panda");
+  panda.append(el);
+}
