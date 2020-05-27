@@ -1,0 +1,30 @@
+{
+  "name": "js-and-css-clock",
+  "version": "1.0.0",
+  "description": "A beautiful and simple pointer clock",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "^2.0.5",
+    "serve": "^11.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serve",
+    "format": "prettier --write \"./**/*.{js,html,css,md,json}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pinguinzinhos/js-and-css-clock.git"
+  },
+  "keywords": [
+    "clock",
+    "virtual"
+  ],
+  "author": "Pricilla Aragão",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pinguinzinhos/js-and-css-clock/issues"
+  },
+  "homepage": "https://github.com/pinguinzinhos/js-and-css-clock#readme"
+}
